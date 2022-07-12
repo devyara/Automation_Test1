@@ -1,0 +1,18 @@
+Logo : //*[@class="logo img-responsive"]
+Login : //div[@class="header_user_info"]
+Contact_Us : //*[@id="contact-link"]
+Validate_Login_Form : //*[@id="login_form"]
+
+#Login
+Email : //*[@id="email"]
+Pass : //*[@id="passwd"]
+Button_Sign : //*[@id="SubmitLogin"]
+Validate_Login : //span[contains(text(),'My account')]
+
+#Order
+Home : //*[@class="icon-chevron-left"]
+Validate_homepage : //*[@id="home-page-tabs"]
+Options1 : (//*[@class="product-container"])[1]
+MoreButton : (//*[@class="button lnk_view btn btn-default"])[1]
+ValidateProductPage : (//*[@class="pb-center-column col-xs-12 col-sm-4"])[1]
+

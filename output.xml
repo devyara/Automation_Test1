@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220711 11:34:03.537" rpa="false" schemaversion="3">
+<suite id="s1" name="Order" source="D:\Automation\Latihan\Steps\Order.robot">
+<kw name="Open Browser Firefox" library="order_keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=Firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220711 11:34:03.996" level="INFO">Opening browser 'Firefox' to base url 'None'.</msg>
+<msg timestamp="20220711 11:34:03.996" level="INFO">Firefox driver log is always forced to to: D:\Automation\Latihan\Steps\geckodriver-40.log</msg>
+<status status="PASS" starttime="20220711 11:34:03.996" endtime="20220711 11:34:10.385"/>
+</kw>
+<status status="PASS" starttime="20220711 11:34:03.996" endtime="20220711 11:34:10.385"/>
+</kw>
+<test id="s1-t1" name="I verify homepage of My Store" line="8">
+<kw name="Open Homepage My Store" library="order_keyword">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://automationpractice.com/index.php</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220711 11:34:10.393" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<status status="PASS" starttime="20220711 11:34:10.393" endtime="20220711 11:34:11.968"/>
+</kw>
+<status status="PASS" starttime="20220711 11:34:10.385" endtime="20220711 11:34:11.968"/>
+</kw>
+<kw name="I validate Logo" library="order_keyword">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220711 11:34:12.064" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-61.png"&gt;&lt;img src="selenium-screenshot-61.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220711 11:34:12.064" level="FAIL">Element with locator '//*[@class="logo img-responsive"]' not found.</msg>
+<status status="FAIL" starttime="20220711 11:34:11.968" endtime="20220711 11:34:12.064"/>
+</kw>
+<status status="FAIL" starttime="20220711 11:34:11.968" endtime="20220711 11:34:12.064"/>
+</kw>
+<kw name="I validate Login" library="order_keyword">
+<status status="NOT RUN" starttime="20220711 11:34:12.064" endtime="20220711 11:34:12.064"/>
+</kw>
+<kw name="I validate Contact Us" library="order_keyword">
+<status status="NOT RUN" starttime="20220711 11:34:12.077" endtime="20220711 11:34:12.077"/>
+</kw>
+<status status="FAIL" starttime="20220711 11:34:10.385" endtime="20220711 11:34:12.077">Element with locator '//*[@class="logo img-responsive"]' not found.</status>
+</test>
+<test id="s1-t2" name="I click Sign In button" line="15">
+<kw name="I click Sign In" library="order_keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220711 11:34:12.077" level="INFO">Clicking element '//div[@class="header_user_info"]'.</msg>
+<msg timestamp="20220711 11:34:12.149" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-62.png"&gt;&lt;img src="selenium-screenshot-62.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220711 11:34:12.149" level="FAIL">Element with locator '//div[@class="header_user_info"]' not found.</msg>
+<status status="FAIL" starttime="20220711 11:34:12.077" endtime="20220711 11:34:12.149"/>
+</kw>
+<status status="FAIL" starttime="20220711 11:34:12.077" endtime="20220711 11:34:12.149"/>
+</kw>
+<kw name="I validate Sign In page" library="order_keyword">
+<status status="NOT RUN" starttime="20220711 11:34:12.149" endtime="20220711 11:34:12.149"/>
+</kw>
+<status status="FAIL" starttime="20220711 11:34:12.077" endtime="20220711 11:34:12.149">Element with locator '//div[@class="header_user_info"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220711 11:34:03.537" endtime="20220711 11:34:12.157"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Order">Order</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
