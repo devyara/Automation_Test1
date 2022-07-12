@@ -30,10 +30,10 @@ I validate Sign In page
     Element Should Be Visible   ${Validate_Login_Form}
 
 I type email registered
-    Input Text                  ${Email}                rahmandaarya@gmail.com
+    Input Text                  ${Email}                rahmandaa***@gmail.com
 
 I type valid password registered
-    Input Text                  ${Pass}                 B4BNpUpk3.@!vQx
+    Input Text                  ${Pass}                 B4BNpUpk3.@!***
 
 I click sign in button
     Click Button                ${Button_Sign}
